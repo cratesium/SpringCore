@@ -1,0 +1,14 @@
+package com.springcore1.collections.props;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class App {
+	public static void main(String[] args) {
+		ApplicationContext  context = new ClassPathXmlApplicationContext("com/springcore1/collections/props/config.xml");
+		User user=(User) context.getBean("nameShikhar");
+		System.out.println(user.getProperties());
+		
+	}
+
+}
