@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd" >
+        
+      
+        
+        
+       
+  
+         <bean class="com.springcore1.collections.onevalueinlist.Emp" name="object1">
+         <property name="name" value="shikhar"/>
+         <property name="phoneNumber" >
+         
+          <value>9015061999</value>
+       
+         
+      
+         </property>
+         <property name="familyMember" >
+         <set>
+         <value>1</value>
+         <value>2</value>
+         <value>3</value>
+         <value>4</value>
+         
+         
+         </set>
+         
+         </property>
+         
+         <property name="courseCode">
+         <map>
+         <entry key="101" value="maths"/>
+         <entry key="102" value="science"/>
+         
+         
+         </map>
+         
+         </property>
+         </bean>
+</beans>
