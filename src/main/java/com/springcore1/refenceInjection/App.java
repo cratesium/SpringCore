@@ -7,7 +7,7 @@ public class App {
 	  public static void main(String[] args) {
 		
 		  
-		 ApplicationContext context=  new ClassPathXmlApplicationContext("com/springcore1/refenceInjection/refconfig.xml");
+		 ApplicationContext context=  new ClassPathXmlApplicationContext("com/springcore1/refenceInjection/refconfigUsingRefAttribute.xml");
 		 A objA =(A)context.getBean("aref");
 		 System.out.println(objA);
 		 System.out.println("------------------------");

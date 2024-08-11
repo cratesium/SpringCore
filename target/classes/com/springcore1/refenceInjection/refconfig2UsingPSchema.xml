@@ -10,8 +10,8 @@
         
       
         
-      <bean class="com.springcore1.refenceInjection.B" name="bref" >
-      <property name="y" value="2222" />
+      <bean class="com.springcore1.refenceInjection.B" name="bref" p:y="000" >
+    
       </bean>   
       
       
@@ -21,11 +21,8 @@
       <ref bean="bref"/>
       </property>
       </bean> -->
-  <bean class="com.springcore1.refenceInjection.A" name="aref">
-  <property name="x" value="111" />
-  <property name="objB">  
-  <ref bean="bref"/>
-  </property>
+    <bean class="com.springcore1.refenceInjection.A" name="aref" p:x="559" p:objB-ref="bref">
+
 </bean>
       
        
