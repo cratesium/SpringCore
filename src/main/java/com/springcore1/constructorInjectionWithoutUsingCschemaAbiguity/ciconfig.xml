@@ -16,7 +16,7 @@
  
  
  <bean class="com.springcore1.constructorInjectionWithoutUsingCschemaAbiguity.Addition" name="addition">
- <constructor-arg value="25"/>
+ <constructor-arg value="23 "  type="int"/>
  <constructor-arg value="25" />
  
  
